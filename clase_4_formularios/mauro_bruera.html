@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <form action="test">
+        ​
+        <div>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido</label>
+            <br>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="pais">País</label>
+            <br>
+            <select name="pais" id="pais">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="peru">Perú</option>
+                <option value="ecuador">Ecuador</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <h4>¿A qué carrera deseas inscribirte?</h4>
+            <label for="ux/ui"></label>
+            <input type="checkbox" name="ux/ui" id="ux/ui"> UX/UI
+            <br>
+            <label for="datascience"></label>
+            <input type="checkbox" name="datascience" id="datascience"> Data Science
+            <br>
+            <label for="desarrollowebfullstack"></label>
+            <input type="checkbox" name="desarrollowebfullstack" id="desarrollowebfullstack"> Desarrollo Web Full Stack
+            <br>
+        </div>
+        <br>
+        <div>
+            <h4>Modalidad</h4>
+            <label for="presencial"></label>
+            <input type="radio" name="modalidad" id="presencial">Presencial
+            <br>
+            <label for="online"></label>
+            <input type="radio" name="modalidad" id="online">Online
+        </div>
+        <br>
+        <div>
+            <h4>¿Estás Trabajando?</h4>
+            <label for="si"></label>
+            <input type="checkbox" name="si" id="si"> Si
+        </div>
+        <br>
+        <div>
+            <h4>Teléfono de Contacto</h4>
+            <label for="telefono"></label>
+            <input type="tel" name="telefono" id="telefono">
+        </div>
+        <br>
+        <div>
+            <h4>Descripción Personal</h4>
+            <label for="descripcionpersonal"></label>
+            <textarea name="descripcionpersonal" id="descripcionpersonal" cols="30" rows="10" maxlength="300"
+                placeholder="Descripción Personal"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        <div>
+            <input type="reset" value="Resetear">
+        </div>
+    </form>
+</body>
+
+</html>

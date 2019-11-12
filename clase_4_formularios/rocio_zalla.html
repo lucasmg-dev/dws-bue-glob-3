@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rocio Zalla">
+    <meta name="description" content="Formulario para inscribirse en las carreras de Acamica">
+    <meta name="keyword" content="formulario,carreras,Acamica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form method="get" action="/formularioGet">
+        <div>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" aria-required="true" required>
+                <br />
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                <br />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br />
+                <label>Teléfono de contacto</label>
+                <input type="text" name="telefono" placeholder="Teléfono" required>
+                <br />
+                <label for="pais">País</label>
+                <select name="pais" id="pais" required>
+                    <option value="" disabled selected>Seleccione un pais</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="guayanaFrancesa">Guayana Francesa</option>
+                    <option value="guyana">Guyana</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="peru">Peru</option>
+                    <option value="trinidadYtobago">Trinidad y Tobago</option>
+                    <option value="surinam">Surinam</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="venezuela">Venezuela</option>
+                </select>
+                <br />
+            </fieldset>
+        </div><br />
+        <div>
+            <fieldset>
+                <legend>Actividad laboral</legend>
+                <label>¿Estás trabajando actualmente?</label>
+                <input type="checkbox" name="actividadLaboral" id="Si" value="Si" />Si
+                <br />
+            </fieldset>
+        </div><br />
+        <div>
+            <fieldset>
+                <legend>Información académica</legend>
+                <label>¿A qué carrera deseas inscribirte?</label><br />
+                <input type="checkbox" name="carrera" id="ux/ui" value="ux/ui" />UX/UI<br />
+                <input type="checkbox" name="carrera" id="dataScience" value="dataScience" />Data Science<br />
+                <input type="checkbox" name="carrera" id="desarrolloWebFullStack"
+                    value="desarrolloWebFullStack" />Desarrollo Web Full Stack<br />
+            </fieldset>
+        </div><br />
+        <div>
+            <fieldset>
+                <legend>Modalidad</legend>
+                <label for="presencial">Presencial
+                    <input type="radio" required name="modalidad" id="presencial" value="presencial">
+                </label>
+                <label for="online">Online
+                    <input type="radio" required name="modalidad" id="online" value="online">
+                </label>
+            </fieldset>
+        </div><br />
+        <div>
+            <label>Descripción personal</label><br />
+            <textarea name="descripcion" id="descripcion" cols="150" rows="10" maxlength="300"></textarea>
+        </div><br />
+        <div>
+            <button type="submit">Enviar</button>
+        </div><br />
+        <div>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>

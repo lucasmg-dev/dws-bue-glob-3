@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='es' dir="ltr">
+
+<head>
+    <meta charset='utf-8' />
+    <title>1, 2, 3, probando formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patricia Isabel">
+    <meta name="keywords" content="form, acamica, example">
+    <meta name="description" content="Formulario de prueba para la clase 4 de Desarrollador Web Full Stack en Acámica">
+    <style>
+        body {
+            font-family: OpenSans-Regular, sans-serif;
+            color: #009f9d;
+            background-color: #ece8d9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1, 2, 3, probando formulario</h1>
+    <form name="miprimerform" method="get" action="/formularioGet" target="blank">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div><br>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="nombre" placeholder="Apellido" required>
+        </div><br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div><br>
+        <div>
+            <label for="pais">País de procedencia</label>
+            <select name="pais" id="pais" required>
+                <option value="" disabled selected>Elige una opción</option>
+                <option value="1">Argentina</option>
+                <option value="2">Boivia</option>
+                <option value="3">Brasil</option>
+                <option value="4">Chile</option>
+                <option value="5">Colombia</option>
+                <option value="6">Ecuador</option>
+                <option value="7">Guyana</option>
+                <option value="8">Paraguay</option>
+                <option value="09">Uruguay</option>
+                <option value="10">Venezuela</option>
+            </select>
+        </div><br>
+        <div>
+            <label>¿A qué carrera deseas inscribirte?</label></br>
+            <input type="checkbox" name="UX/UI" value="UX/UI">UX/UI<br>
+            <input type="checkbox" name="Data Science" value="Data Science">Data Science<br>
+            <input type="checkbox" name="DesarrolloWebFullStack" value="DesarrolloWebFullStack">Desarrollo Web Full
+            Stack
+        </div><br>
+        <div>
+            <label>¿Qué modalidad te interesa?</label><br>
+            <label for="presencial"><input type="radio" name="modalidad" id="presencial">Presencial</label><br>
+            <label for="online"><input type="radio" name="modalidad" id="online">Online</label>
+        </div><br>
+        <div>
+            <label><input type="checkbox" name="trabajo" value="trabajo">Actualmente estoy trabajando</label>
+        </div><br>
+        <div>
+            <label for="telephonenumber">Teléfono</label>
+            <input type="tel" name="telephonenumber" id="telephonenumber" placeholder="Teléfono" required>
+        </div><br>
+        <div>
+            <label for="descripcion">Breve descripción personal</label><br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"
+                placeholder="Sobre mí"></textarea>
+        </div><br>
+        <div>
+            <label>¿Desea recibir el boletín informativo?</label></br>
+            <label for="si"><input type="radio" name="boletin" id="si">Sí, me encantaría</label><br>
+            <label for="no"><input type="radio" name="boletin" id="no">No, déjenme en paz</label>
+        </div><br>
+        <button type="submit">Enviar!</button>
+        <button type="reset">Resetear</button>
+    </form>
+</body>
+
+</html>
