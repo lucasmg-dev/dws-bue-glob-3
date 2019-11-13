@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Florencia Krevisky">
+    <meta name="description" content="Este es un formulario de inscripción para cursar en Acámica. 
+    Dentro del mismo podrás completar tus datos, seleccionar tu país de procedencia, 
+    carrera que deseas cursar y modalidad, entre otros.">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="test" method="POST">
+        <div>
+            <h2>Completá los datos:</h2>
+            <label for="nombre">
+                Nombre
+                <input type="text" name="nombre" id="nombre" placeholder="Tu nombre acá" required><br />
+            </label>
+            <label for="Apellido">
+                Apellido
+                <input type="text" name="apellido" id="Apellido" placeholder="Tu apellido acá" required><br />
+            </label>
+            <label for="email">
+                Email
+                <input type="email" id="email" placeholder="Tu email" required><br />
+            </label>
+        </div>
+        ​
+        <div><br>
+            <label for="pais">¿De dónde sos?</label> <br />
+            <select name="pais" id="pais" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="Argentina"> Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+        </div>
+        ​
+        <div> <br>
+            <label for="Carrera">¿A qué carrera deseas inscribirte?</label> <br />
+            <select name="Carrera" id="Carrera" required>
+                <option value="" disabled selected>Seleccioná una opción</option>
+                <option value="UX"> UX/UI</option>
+                <option value="Data">Data Science</option>
+                <option value="DWFS">Desarrollo Web Full Stack</option>
+            </select></div>
+
+        <div> <br>
+            <label>Modalidad</label> <br />
+            <input type="radio" name="Modalidad" id="Presencial" value="Presencial" required />
+            <label for="Presencial">Presencial</label><br />
+            <input type="radio" name="Modalidad" id="online" value="online" required />
+            <label for="online">Online</label>
+        </div>
+        ​
+        <div><br>
+            <label for="Trabajando">¿Estás trabajando actualmente? <br />
+                <input type="checkbox" name="Trabajo" value="Sí" id="Trabajando"> Sí<br />
+
+            </label>
+        </div>
+        ​
+        <div> <br>
+            <label for="Telefono">Teléfono</label>
+            <input type="text" name="Telefono" id="Telefono">
+        </div>
+        ​
+        <div><br>
+            <label for="Descripcion">Escribe una descripción personal</label> <br />
+            <textarea name="Descripcion" id="Descripcion" cols="30" rows="10" maxlength="300"
+                placeholder="Escribe aquí"></textarea>
+        </div>
+        ​
+        <div>
+            <input type="submit" name="enviar" id="Enviar">
+            <input type="reset" name="borrar" id="Borrar">
+        </div>
+
+    </form>
+</body>
+
+</html>
