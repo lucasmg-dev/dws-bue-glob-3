@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metallica</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+</head>
+<body>
+        <div class="scrollmenu">
+                <a href="James Hetfield.html">James Hetfield</a>
+                <a href="Kirk Hammett.html">Kirk Hammett</a>
+                <a href="Rober Trujillo.html">Rober Trujillo</a>
+                <a href="Lars Ulirch.html">Lars Ulrich</a>
+                <a href="Hardwired Tour.html">Tour Gallery</a>
+            </div>
+        <h1>
+            About Metallica
+        </h1>
+        <h3>    </h3>
+        <h2>    Metallica is an American heavy metal band.<br>
+                The band was formed in 1981 in<br>
+                Los Angeles by vocalist/guitarist <br>
+                James Hetfield and drummer Lars Ulrich, <br>
+                and has been based in San Francisco for most of its career.</h2>
+                <h3></h3>
+        <button type="button" class="collapsible">Metallica Members</button>
+            <div class="content">
+                    <p><ul>
+                        <li><a href="James Hetfield.html">James Hetfield<br></a></li>
+                        <li><a href="Robert Trujillo.html">Robert Trujillo<br></a></li>
+                        <li><a href="Kirk Hammett.html">Kirk Hammett<br></a></li>
+                        <li><a href="Lars Ulirch.html">Lars Ulrich<br></a></li>
+                    </ul></p>
+            </div>
+            <button type="button" class="collapsible">Discograpgy</button>
+            <div class="content">
+                    <p><ul>
+                        <li>Master of puppets</li> 
+                        <li>And Justice for all</li> 
+                        <li>Ride the lightning</li>  
+                        <li>Kill 'Em all</li> 
+                        <li>Harwired to self-destruct</li> 
+                        <li>Death Magnetic</li>
+                        <li>Metallica: Trough the never</li> 
+                        <li>St.Anger</li> 
+                        <li>Hit the ligths</li> 
+                        <li>S&M</li> 
+                    </ul></p>
+            </div>
+            <button type="button" class="collapsible">Spotify TOP 5</button>
+            <div class="content">
+                    <p><ul>
+                        <li>Nothing else matters</li> 
+                        <li>Enter Sandman</li> 
+                        <li>Master of Puppets</li>  
+                        <li>The Unforgiven</li> 
+                        <li>One</li> 
+                    </ul></p>
+            </div>
+            
+            <h5></h5>
+        <audio src= "Metallica-Seek-Destroy.mp3" controls= "controls" 
+        type= "audio/mpeg" preload="preload">
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+                
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+            var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                    }
+                  });
+                }
+        </script> 
+
+    </body>
+</html>

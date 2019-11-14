@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="name" content="Nombre">
+    <meta name="family-name" content="Apellido">
+    <meta name="mail" content="mail">
+    <meta name="country-name" content="paises">
+    <meta name="carrera" content="carrera">
+    <meta name="modalidad" content="modalidad">
+    <meta name="teléfono" content="teléfono">
+    <meta name="descripción personal"
+        content="información extra sobre la persona que se va a inscribir en la carrera de Acamica">
+    ​
+    ​
+
+    <title>Formulario de inscrpción a Acamica</title>
+</head>
+
+<body>
+    <form action="/action.php"></form>
+    <div>
+        <label for="terminos">Nombre</label>
+        <input type="text" id="name" name="nombre" placeholder="nombre" required>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Apellido</label>
+        <input type="name" id="family-name" name="apellido" placeholder="text" required>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Mail</label>
+        <input type="email" id="mail" name="mail" placeholder="mail" required>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">País de origen</label>
+        <select country-name="paises" id="country-name" aira-placeholder="multiple" required>
+            <option value="" disabled>Seleccione su país de origen</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Venezuela">Venezuela</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Carrera</label>
+        <select name="carrera" id="carrera" aria-placeholder="carrera" required>
+            <option value="" disabled> ¿A qué carrera deseas incribirte? </option>
+            <option value="UX/UI">UX/UI</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Desarrollo Web Full stack">Desarrollo Web Full Stack</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Modalidad</label>
+        <select name="modalidad" id="modalidad" aria-placeholder="Modalidad" required>
+            <option value="" disabled>Modalidad</option>
+            <option value="Presencial">Presencial</option>
+            <option value="Online">Online</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">¿Estás trabajando actualmente?</label>
+        <br>
+        <input type="radio" name="terminos" value="Si" />Si<br>
+        <input type="radio" name="terminos" value="No" />No<br>
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Teléfono</label>
+        <input type="number" name="número de teléfono" id="teléfono" placeholder="teléfono">
+    </div>
+    <br>
+    <div>
+        <label for="terminos">Descripción personal</label>
+        <input type="text" name="text" id="descripción-personal" placeholder="descripción" maxlength="300">
+    </div>
+    <br>
+    <div>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+    </div>
+</body>
+
+</html>

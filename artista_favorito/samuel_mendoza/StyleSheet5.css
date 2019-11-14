@@ -1,0 +1,55 @@
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    }
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    }
+div.scrollmenu a:hover {
+    background-color: #777;
+    }
+body {
+background-image: url(http://img.over-blog-kiwi.com/0/93/85/50/20140522/ob_791e7c_robert-trujillo-metallica-05.jpeg);    
+background-attachment: fixed;
+text-align: center;
+}
+p {             
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;    
+    margin: 0 0 5px;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px ;
+    border: 2px solid silver;
+    width: 30vw;
+    }
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    text-decoration-style: wavy;
+    text-align: left;
+    overflow: hidden;    
+    margin: 0 0 5px;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px ;
+    border: 2px solid silver;      
+    width: 35vw;     
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    color: silver;
+}

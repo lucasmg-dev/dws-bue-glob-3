@@ -1,0 +1,56 @@
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+div.scrollmenu a:hover {
+    background-color: #777;
+    }
+body {
+    background-image: url(https://wallpaper-house.com/data/out/10/wallpaper2you_425227.png);    
+    background-attachment: fixed;
+    text-align: center;
+}
+p {             
+    font-family:'arial, Helvetica, sans-serif';
+    color: silver;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;    
+    margin: 0 0 5px;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px ;
+    border: 2px solid silver;
+    width: 30vw;
+    }
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
+    text-decoration-style: wavy;
+    text-align: left;
+    overflow: hidden;    
+    margin: 0 0 5px;
+    padding: 20px;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px ;
+    border: 2px solid silver; 
+    width: 30vw;          
+}
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: black;
+    cursor: pointer;
+    color: silver;
+    text-emphasis: open;
+}

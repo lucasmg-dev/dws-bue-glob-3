@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Acámica</title>
+    <meta name="Formulario de contacto" content="EL formulario de contacto es para conocerte mejor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ​
+    <style>
+        body {
+            font-family: 'helvetica', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(88, 10, 161);
+            background-color: rgb(226, 226, 226);
+        }
+    </style>
+    ​
+    ​
+</head>
+​
+​
+​
+
+<body>
+    <h1>Formulario de Contacto Acámica</h1>
+    <p>Completa el formulario para recibir más información sobre las carreras de <a
+            href="https://www.acamica.com/">Acámica</a> </p>
+
+    <form method="GET" action="/formularioget">
+        ​
+        <fieldset>
+            <legend><strong>Formulario de Contacto</strong></legend>
+            ​
+            <h2>1. A qué carrera deseas inscribirte</h2>
+            <label for="UX/UI">
+                <input type="checkbox" name="Carrera" id="UX/UI" value="UX/UI" required>
+                UX/UI
+            </label>
+            <br>
+            ​
+            <label for="Data Sciencie">
+                <input type="checkbox" value="Datas Sciencie" name="Carrera" id="Data Sciencie" required>
+                Data Sciencie
+            </label>
+            <br>
+            ​
+            <label for="Desarrollo Web Full Stack">
+                <input type="checkbox" value="Desarrollo Web Full Stack" name="Carrera" id="Desarrollo Web Full Stack"
+                    required>
+                Desarrollo Web Full Stack
+            </label>
+            <br>
+            ​
+            <h2>2. Modalidad de cursada</h2>
+            <label for="presencial">
+
+                <input type="radio" name="Modalidad" id="Presencial" value="Presencial" required>
+                Presencial
+                <br>
+            </label>
+            ​
+            <label for="Online">
+                <input type="radio" name="Modalidad" id="Online" required>
+                Online
+            </label>
+            ​
+            <br>
+            <br>
+            ​
+
+            <h2>3. Estás trabajando actualmente?</h2>
+            ​
+            <label for="trabajo" name="trabajo" id="si">
+                <input type="radio" name="trabajo" id="Sí" required>
+                Sí
+            </label>
+            ​
+            <br>
+            ​
+            <label for="trabajo" name="trabajo" id="no">
+                <input type="radio" name="trabajo" id="no" required>
+                No
+            </label>
+            ​
+            <br>
+            ​
+            <label for="trabajo" name="trabajo" id="esporadicamente">
+                <input type="radio" name="trabajo" id="esporadicamente" required>
+                Esporádicamente
+            </label>
+            ​
+            <br>
+            <br>
+            ​
+
+            <h2>4. Teléfono de Contacto</h2>
+            <input type="telefono" telefono placeholder="Ej. (0221) 15 400-7985" required>
+            ​
+            ​
+            <h2>5. Contanos un poco sobre vos</h2>
+            <br>
+            <label for="comentarios" name="Comentarios" id="Descripcion">
+                <textarea name="comentarios" rows="10" cols="80" placeholder="Escribe sobre tí aquí"></textarea>
+                <br><br>
+            </label>
+
+            <div>
+                <button type="reset">Reset form</button>
+                <button type="submit">Enviar Formulario</button>
+            </div>
+            ​
+            <br><br>
+            ​
+        </fieldset>
+        ​
+        ​
+    </form>
+    ​
+</body>
+​
+<footer>Acámica todos los derechos reservados</footer>
+​
+
+</html>
