@@ -1,0 +1,117 @@
+.imagen {
+    width: 600px;
+    background-color: blanchedalmond;
+    position: relative;
+    border-radius: 50%;
+    padding: 25px;
+    margin: 10px;
+    border: 6px solid black;
+}
+
+.imagen::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* acá sí va el transform porque no lo vamos a cambiar con el transform-origin */
+    z-index: 2;
+}
+
+.hora {
+    width: 100px;
+    height: 15px;
+    background-color: black;
+    position: absolute;
+    top: 48.85%;
+    left: 47.05%;
+    animation-name: hora;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    transform-origin: 20% 50%;
+    -webkit-transform-origin: 20% 50%;
+    /* WebKit */
+    -moz-transform-origin: 20% 50%;
+    /* Mozilla */
+    -o-transform-origin: 20% 50%;
+    /* Opera */
+    -ms-transform-origin: 20% 50%;
+    /* Internet Explorer */
+
+}
+
+.min {
+    width: 200px;
+    height: 8px;
+    background-color: red;
+    position: absolute;
+    top: 49.4%;
+    left: 43.95%;
+    animation-name: min;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    transform-origin: 20% 50%;
+    -webkit-transform-origin: 20% 50%;
+    /* WebKit */
+    -moz-transform-origin: 20% 50%;
+    /* Mozilla */
+    -o-transform-origin: 20% 50%;
+    /* Opera */
+    -ms-transform-origin: 20% 50%;
+    /* Internet Explorer */
+}
+
+.seg {
+    width: 300px;
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    top: 49.6%;
+    left: 40.9%;
+    animation-name: seg;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    transform-origin: 20% 50%;
+    -webkit-transform-origin: 20% 50%;
+    /* WebKit */
+    -moz-transform-origin: 20% 50%;
+    /* Mozilla */
+    -o-transform-origin: 20% 50%;
+    /* Opera */
+    -ms-transform-origin: 20% 50%;
+    /* Internet Explorer */
+}
+
+@keyframes seg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes min {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hora {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
