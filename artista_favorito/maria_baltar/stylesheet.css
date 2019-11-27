@@ -1,0 +1,125 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+}
+
+.botontop {
+    position: fixed;
+    color: white;
+    bottom: 30px;
+    right: 30px; 
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Container beegees1.jpg with title text */
+.homearea {
+    background-image: url("beegees1mod.jpg");
+    background-size: 100%, 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Logo Bee Gees sobre imagen */
+.logo {
+    text-align: center;
+}
+
+/* Navigation bar */
+#navbar ul{
+    list-style: none;
+    margin: 0%;
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    background-color: black;
+    text-align: left;
+}
+
+ul li{
+    padding: 10px;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* About */
+.abouttext {
+    color: white;
+    box-sizing: border-box;
+    padding: 88px 100px 88px 100px;
+    width: 50%;
+    text-align: justify;
+    margin: 0;
+}
+.abouttext p {
+    font-size: 1.3rem;
+}
+
+#beegees3 {
+    float: right;
+    width: 50%;
+}
+
+/* Discografia */
+.discosarea {
+    background-color: yellow;
+}
+
+.discosarea {
+    padding: 50px 100px 50px 100px;
+    background-color: #464646;
+    color: white;
+}
+
+.nombresdiscos {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.nombresdiscos li {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+}
+
+.tapas li {
+    width: 100%;
+    display: inline;
+    padding: 0;
+}
+
+/* Top 5 */
+
+.top5area {
+    background-color: black;
+    color: white;
+    padding: 50px 100px 50px 100px;
+}
+
+#beegeesviejos {
+    float: right;
+    width: 40%;
+}
+
+.top5area li {
+    font-size: 1.3rem;
+}
+
+.spotify {
+    float: left;
+    padding: 0px 100px 100px 0px;
+}
